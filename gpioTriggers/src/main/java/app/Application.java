@@ -7,7 +7,7 @@ import com.pi4j.io.gpio.event.GpioPinListenerDigital;
 public class Application {
     private final static GpioController controller = GpioFactory.getInstance();
 
-    private final static GpioPinInput btnOne = controller.provisionDigitalInputPin(RaspiPin.GPIO_03, "btnOne", PinPullResistance.PULL_DOWN);
+    private final static GpioPinDigitalInput btnOne = controller.provisionDigitalInputPin(RaspiPin.GPIO_03, "btnOne", PinPullResistance.PULL_DOWN);
 
 
     public static void main(String[] args) {
